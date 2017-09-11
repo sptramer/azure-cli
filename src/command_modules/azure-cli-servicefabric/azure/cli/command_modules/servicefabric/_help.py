@@ -66,8 +66,8 @@ helps["sf cluster create"] = """
             az sf cluster create -g group-name -n cluster1 -l westus -size 4 --vm-password Password#1234 --certificate-output-folder MyCertificates
         - name: Use a keyvault certificate and custom template to deploy a cluster.
           text: >
-            az sf cluster create -g group-name -n cluster1 -l westus --template-file template.json --parameter-file parameter.json
-            --secret-identifier https://{MyKeyVault}.vault.azure.net:443/secrets/{MyCertificate}
+            az sf cluster create -g group-name -n cluster1 -l westus --template-file template.json \\
+                --parameter-file parameter.json --secret-identifier https://{MyKeyVault}.vault.azure.net:443/secrets/{MyCertificate}
 
 """
 

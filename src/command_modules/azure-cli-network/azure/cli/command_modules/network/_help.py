@@ -1507,8 +1507,6 @@ helps['network route-filter rule create'] = """
           short-summary: Space separated list of border gateway protocol (BGP) community values to filter on.
           populator-commands:
             - az network route-filter rule list-service-communities
-    examples:
-        text:
 """
 
 helps['network route-filter rule delete'] = """
